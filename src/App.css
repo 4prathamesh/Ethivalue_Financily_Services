@@ -1,0 +1,98 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* margin: 0; */
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+/* General Section Padding */
+.services-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa; /* Light gray background to contrast with form */
+}
+
+/* Service Box Card */
+.service-box {
+  background-color: #ffffff;
+  border-radius: 1.25rem; /* same as rounded-4 in Bootstrap */
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Circle */
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f5ecfd; /* Default */
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover .service-icon {
+  animation: bounceIcon 1s infinite alternate;
+}
+
+@keyframes bounceIcon {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Title Styling */
+.service-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  min-height: 3.5rem;
+  color: #212529;
+}
+
+/* Utility Backgrounds (override or add as needed) */
+.bg-light-purple {
+  background: #f5ecfd;
+}
+.bg-light-success {
+  background: #dcfcef;
+}
+.bg-light-yellow {
+  background: #faf8e1;
+}
+.bg-light-orange {
+  background: #ffeddd;
+}
+.bg-light-pink {
+  background: #ffd2db;
+}
+
+
+main {
+  min-height: 300px;
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #222;
+}
+
+p {
+  font-size: 18px;
+}
