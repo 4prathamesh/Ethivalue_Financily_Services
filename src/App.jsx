@@ -8,23 +8,26 @@ import Login from './pages/Login';
 import FreeDemo from './pages/FreeDemo';
 import BookAppointment from './pages/BookAppointment';
 import RegistrationForm from './pages/RegistrationForm'; 
+import { AuthProvider } from './context/AuthContext';
 
 import './App.css';
 function App() {
     return ( < div >
         
-        
-        <Router>
-        <Header />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/free-demo" element={<FreeDemo />} />
-            <Route path="/book-appointment" element={<BookAppointment />} />
-            <Route path="/registration-form" element={<RegistrationForm />} />
-        </Routes>
-        < Footer />
-        </Router>
+        <AuthProvider> {/* Provides login state to all components */}
+            <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/free-demo" element={<FreeDemo />} />
+                <Route path="/book-appointment" element={<BookAppointment />} />
+                <Route path="/registration-form" element={<RegistrationForm />} />
+            </Routes>
+            < Footer />
+            </Router>
+        </AuthProvider>
+
         
         </div>
     );
