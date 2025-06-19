@@ -9,6 +9,7 @@ import FreeDemo from './pages/FreeDemo';
 import BookAppointment from './pages/BookAppointment';
 import RegistrationForm from './pages/RegistrationForm'; 
 import { AuthProvider } from './context/AuthContext';
+import ProfileWrapper from './context/ProfileWrapper'; 
 
 import './App.css';
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/free-demo" element={<FreeDemo />} />
                 <Route path="/book-appointment" element={<BookAppointment />} />
                 <Route path="/registration-form" element={<RegistrationForm />} />
+                <Route path="/profile" element={<ProfileWrapper />} />
             </Routes>
             < Footer />
             </Router>

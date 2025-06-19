@@ -96,3 +96,15 @@ h2 {
 p {
   font-size: 18px;
 }
+
+.header-dark {
+  background-color: #1a1a1a; /* blackish */
+}
+
+.section-blue {
+  background-color: #2e3b55; /* dark blue */
+}
+
+.footer-gray {
+  background-color: #2c2f33; /* dark gray with a tint */
+}
