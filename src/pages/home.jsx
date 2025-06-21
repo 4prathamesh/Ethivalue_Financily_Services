@@ -30,7 +30,31 @@ function Home() {
               Book Appointment
             </button>
           </div>
+
+          {/* Why We Start */}
+          <div style={{ backgroundColor: '#222831', color: '#DFD0B8' }} className=" text-white rounded shadow p-4 mt-5 text-start">
+            <h2 className="fw-bold text-center">Why We Start</h2>
+            <p className="lead mt-3">
+              We have observed that many enterprises struggle to survive, meet compliance requirements,
+              or achieve significant business growth and expansion. Similarly, individuals and families
+              often face challenges in managing financial planning and investments effectively.
+            </p>
+            <p className="lead">
+              Hiring a Chief Financial Officer (CFO) for businesses or a financial planner for families
+              can be difficult and costly. To address these challenges, we offer virtual CFO and virtual
+              financial planning services at a minimal cost, providing expert and professional advice to
+              support businesses and individuals in achieving their financial goals.
+            </p>
+          </div>
+
           <ServicesSection />
+          <div>
+            <h2 className="fw-bold">Why Choose EthiValue</h2>
+            <p className="lead mt-3">
+              We provide expert and professional services to transform struggling businesses into thriving enterprises. 
+              Our team helps you achieve financial freedom and a debt-free life through tailored guidance and strategic solutions.
+            </p>
+          </div>
         </div>
       ) : (<div style={{ minHeight: '180px' }} className="container">
         <p>emp dashboard</p>

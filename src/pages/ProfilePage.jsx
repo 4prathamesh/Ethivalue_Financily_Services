@@ -37,6 +37,7 @@ const ProfilePage = ({ userData }) => {
                     <th>Purpose</th>
                     <th>Status</th>
                     <th>Scheduled At</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -51,6 +52,16 @@ const ProfilePage = ({ userData }) => {
                         </span>
                       </td>
                       <td>{new Date(appt.scheduledAt).toLocaleString()}</td>
+                      <td>
+                        <a
+                          href='/profile'
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-primary btn-sm"
+                        >
+                          Join Call
+                        </a>
+                      </td>
                     </tr>
                   ))}
                 </tbody>

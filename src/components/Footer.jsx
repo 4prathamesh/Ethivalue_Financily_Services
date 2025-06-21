@@ -8,14 +8,6 @@ function Footer() {
           <div className="row mt-4">
             <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
               <h5 className="text-uppercase mb-4">About company</h5>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti.
-              </p>
-              <p>
-                Blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias.
-              </p>
 
               <div className="mt-4 d-flex justify-content-center gap-1 flex-wrap">
                 <button type="button" className="btn btn-floating btn-light btn-lg">
@@ -34,14 +26,6 @@ function Footer() {
             </div>
 
             <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 className="text-uppercase mb-4 pb-1">Search something</h5>
-
-              <div className="form-outline form-white mb-4">
-                <input type="text" id="formControlLg" className="form-control form-control-lg" />
-                <label className="form-label" htmlFor="formControlLg">
-                  Search
-                </label>
-              </div>
 
               <ul className="fa-ul" style={{ marginLeft: "1.65em" }}>
                 <li className="mb-3">
@@ -90,8 +74,7 @@ function Footer() {
 
         <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
           © 2020 Copyright:{" "}
-          <a className="text-white" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+          <a className="text-white" href="">
           </a>
         </div>
       </footer>

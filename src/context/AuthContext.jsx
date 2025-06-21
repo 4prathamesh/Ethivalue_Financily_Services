@@ -14,7 +14,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = (email) => {
-    const newUser = { email, role:"CINT"};
+    const newUser = { email, role:"CLIENT"};
     setUser(newUser);
     localStorage.setItem("user", JSON.stringify(newUser)); // Save to localStorage
   };
