@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './css/Header.module.css';
 // import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-
 import { useContext } from 'react';
+import * as bootstrap from 'bootstrap';
+
 
 function Header() {
     const { user, logout } = useContext(AuthContext);
@@ -58,7 +59,13 @@ function Header() {
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
+              <a className="nav-link" href="/#services" onClick={() => {
+                const offcanvasEl = document.getElementById('offcanvasDarkNavbar');
+                const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvas) {
+                  offcanvas.hide();
+                }
+              }}>Services</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Contact</a>

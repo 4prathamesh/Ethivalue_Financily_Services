@@ -1,49 +1,68 @@
+/* Main navbar container */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    position: relative;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  position: relative;
+}
+
+/* Dark version of header with shadow */
+.header-dark {
+  background-color: #111 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif; /* Use modern font */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile menu icon (hamburger) */
+.menuIcon {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #222;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown li a:hover {
+  background-color: #444;
+}
+
+/* Responsive text size */
+@media (max-width: 768px) {
   .logo {
-    font-size: 24px;
+    font-size: 1.2rem;
   }
-  
-  .menuIcon {
-    font-size: 28px;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .dropdown {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #444;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-  }
-  
-  .dropdown ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .dropdown li a {
-    display: block;
-    padding: 12px 20px;
-    color: white;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .dropdown li a:hover {
-    background-color: #555;
-  }
-  
+}

@@ -46,8 +46,9 @@ function Home() {
               support businesses and individuals in achieving their financial goals.
             </p>
           </div>
-
-          <ServicesSection />
+          <div id="services">
+            <ServicesSection />
+          </div>
           <div>
             <h2 className="fw-bold">Why Choose EthiValue</h2>
             <p className="lead mt-3">
