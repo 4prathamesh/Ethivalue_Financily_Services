@@ -28,7 +28,26 @@ const sampleUserData = {
       createdAt: '2025-06-09T22:25:51.347116',
     }
   ],
-  completedAppointments: []
+  completedAppointments: [
+    {
+      id: 3,
+      userId: 2,
+      employeeId: 3,
+      purpose: "VCFO Follow-up",
+      status: "COMPLETED",
+      type: "appointment",
+      scheduledAt: "2025-06-01T14:00:00"
+    },
+    {
+      id: 4,
+      userId: 2,
+      employeeId: 3,
+      purpose: "Tax Filing",
+      status: "COMPLETED",
+      type: "demo",
+      scheduledAt: "2025-05-15T11:30:00"
+    }
+  ]
 };
 
 const ProfileWrapper = () => <ProfilePage userData={sampleUserData} />;
