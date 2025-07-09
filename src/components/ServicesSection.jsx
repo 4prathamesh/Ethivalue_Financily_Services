@@ -5,43 +5,63 @@ import awsPorgram from '../img/awsPorgram.webp';
 import insuranceP from '../img/insuranceP.png';
 import TaxPlanning from '../img/taxPlaning.png';
 import Retirement from '../img/retirement.webp';
-import ChildrenEducationPlan from '../img/ChildrenEducationPlan.png';
 
 const services = [
   {
-    title: 'Financial Plan',
+    title: 'Wealth Management & Financial Planning',
     icon: financialPlanIcon,
-    description: 'Detailed financial planning for individuals and businesses.',
+    description: `<strong>We assist in building and preserving wealth through:</strong>
+
+    - Mutual fund investments (SIP, lump-sum, ELSS)
+    - Goal-based financial planning (retirement, child education, etc.)
+    - Portfolio monitoring, reviews, and rebalancing
+    - Tax planning and insurance advisory`,
   },
   {
-    title: 'Investment Advice',
+    title: 'Insurance Planning & Risk Management',
     icon: investmentAdviceIcon,
-    description: 'Professional advice to help grow your investments.',
+    description: `<strong>We provide comprehensive protection solutions with:</strong>
+
+    - Life, health, and general insurance plans tailored to your needs
+    - Personalized risk assessment and coverage analysis
+    - Claims support and regular policy reviews`,
   },
   {
-    title: 'Investment Awareness Programs',
+    title: 'Startup Advisory & Investor Networking',
     icon: awsPorgram,
-    description: 'Educational programs to increase your investment knowledge.',
+    description: `<strong>We support startups in achieving investor readiness through:</strong>
+
+    - Business model development and financial planning
+    - Pitch deck creation and valuation guidance
+    - Connections with angel investors and venture capitalists.`,
   },
   {
-    title: 'Insurance Planning',
+    title: 'Investor Connect & Engagement Events',
     icon: insuranceP,
-    description: 'Planning for your insurance needs and protection.',
+    description: `<strong>We bridge the gap between businesses and investors by organizing:</strong>
+
+    - Curated investor meets and startup pitch sessions
+    - Showcases of financial and funding opportunities
+    - Knowledge-sharing sessions on investment trends and strategies
+    - Expert panels and sector-focused discussions`,
   },
   {
-    title: 'Tax Planning',
+    title: 'Tax Planning & Compliance',
     icon: TaxPlanning,
-    description: 'Strategies to optimize your tax liability.',
+    description: `<strong>We ensure tax efficiency and regulatory compliance through:</strong>
+
+    - Strategic tax-saving plans (Sections 80C, 80D, etc.)
+    - Income tax return filing and documentation support
+    - GST, TDS, and other statutory advisory services`,
   },
   {
-    title: 'Retirement Planning',
+    title: 'Virtual CFO Services',
     icon: Retirement,
-    description: 'Prepare for a secure and comfortable retirement.',
-  },
-  {
-    title: 'Children Education Plan',
-    icon: ChildrenEducationPlan,
-    description: 'Plan ahead for your children’s education expenses.',
+    description: `<strong>We deliver strategic financial leadership through:</strong>
+
+    - Budgeting, cash flow forecasting, and financial reporting
+    - MIS preparation and investor communication
+    - Compliance with accounting and regulatory standards`,
   },
 ];
 
@@ -105,7 +125,10 @@ const ServicesSection = () => {
                   className="mb-3"
                   style={{ maxWidth: '100px' }}
                 />
-                <p>{selectedService.description}</p>
+                <div
+                  style={{ whiteSpace: 'pre-line' }}
+                  dangerouslySetInnerHTML={{ __html: selectedService.description }}
+                ></div>
               </div>
               <div className="modal-footer">
                 <button

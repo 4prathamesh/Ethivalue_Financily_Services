@@ -3,7 +3,6 @@ import './css/Header.module.css';
 // import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { useContext } from 'react';
-import * as bootstrap from 'bootstrap';
 
 
 function Header() {
@@ -59,17 +58,21 @@ function Header() {
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#services" onClick={() => {
-                const offcanvasEl = document.getElementById('offcanvasDarkNavbar');
-                const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
-                if (offcanvas) {
-                  offcanvas.hide();
-                }
-              }}>Services</a>
+              <a className="nav-link" href="/#about" >About Us</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a className="nav-link" href="#whoWeserve">Who We Serve</a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#services">Our Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#whyChooseUs" >Why Choose Us</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#services" >Knowledge Center</a>
+            </li>
+            
             {!user && (
               <li className="nav-item">
                 <a className="nav-link" href="/login">Login</a>
